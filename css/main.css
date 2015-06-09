@@ -34,7 +34,6 @@ div.cta {
 }
 
 #logo {
-	margin-left: 20px;
 	margin-top: 20px;
 }
 
@@ -44,5 +43,5 @@ div.cta {
 }
 
 input#mce-EMAIL {
-	min-width: 400px;
+	min-width: 300px;
 }
