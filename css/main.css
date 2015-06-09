@@ -16,6 +16,17 @@ video {
 	background-size: cover;
 }
 
+video {
+	display: block;
+}
+
+@media screen and (max-device-width: 1024px) {
+	body {
+		background: url("../images/splash_bg.jpg") #000 no-repeat center center fixed;
+	}
+	#bgvid {display: none;}
+}
+
 h1 {
 	color: white;
 	font-family: 'Lato', sans-serif;
