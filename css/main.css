@@ -21,6 +21,10 @@ video {
 	display: block;
 }
 
+body {
+	background-color: #000;
+}
+
 @media screen and (max-device-width: 1024px) {
 	body {
 		background: #000 url("../images/splash_bg.gif") no-repeat center center fixed;
@@ -30,10 +34,6 @@ video {
 		background-size: cover;
 	}
 	#bgvid {display: none;}
-}
-
-body {
-	background-color: #000;
 }
 
 h1 {
@@ -79,4 +79,10 @@ div.cta {
 
 input#mce-EMAIL {
 	min-width: 300px;
+}
+
+@media screen and (max-device-width: 1024px) {
+	input#mce-EMAIL {
+		min-width: 0;
+	}
 }

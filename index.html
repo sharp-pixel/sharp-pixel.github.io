@@ -35,12 +35,14 @@
 
   <link rel="stylesheet" href="css/main.css">
 
+  <!-- Segment analytics -->
   <script type="text/javascript" async>
     !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
     analytics.load("qPQmdu3hzx4XuAkkV7HUd9hINKVW8ZQV");
     analytics.page()
   }}();
   </script>
+
   <!-- Facebook Conversion Code for Registration -->
   <script>(function() {
     var _fbq = window._fbq || (window._fbq = []);
@@ -67,6 +69,16 @@
 <![endif]-->
 </head>
 <body>
+  <!-- Facebook SDK for sharing -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=737299266339823";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
   <video autoplay loop poster="images/splash_bg.jpg" id="bgvid">
     <source src="images/splash_bg.mp4" type="video/mp4">
     <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/mOQYOQBCfF0" frameborder="0" allowfullscreen></iframe>-->
@@ -84,11 +96,11 @@
 
   <div class="container cta">
     <div class="row">
-      <div class="col-md-2" id="logo">
+      <div class="col-xs-2" id="logo">
         <img src="images/logo.png" alt="ALTERNITY">
       </div>
 
-      <div class="col-md-8 vcenter" id="subscribe">
+      <div class="col-xs-8 vcenter" id="subscribe">
         <form action="//alternity.us10.list-manage.com/subscribe/post?u=30763facbc6137f88fb2ab21a&amp;id=db7ca716ba" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline validate" target="_blank" novalidate>
           <div class="form-group mc-field-group">
             <input type="email" class="form-control" id="mce-EMAIL" name="EMAIL" placeholder="Enter email to subscribe to the newsletter">
@@ -102,6 +114,13 @@
 
       <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 
+      <div class="col-xs-2 vcenter">
+        <!-- Facebook share button -->
+        <div class="fb-share-button" data-href="http://www.alternity.co" data-layout="button"></div>
+        <!-- Twitter tweet button -->
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="_Alternity">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </div>
     </div>
   </div>
 
